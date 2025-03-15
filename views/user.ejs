@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeetCode Profile</title>
+  <link rel="stylesheet" href="/styles.css"> <!-- Optional CSS for styling -->
+</head>
+<body>
+  <div class="container">
+    <h1>LeetCode User Profile</h1>
+    
+    
+    <p><strong>Name:</strong> <%= user.matchedUser.profile.realName || 'N/A' %></p>
+    
+    
+    <p><strong>Total points Scored:</strong> <%= user.matchedUser.contributions.points || 0 %></p>
+    
+    
+    <p><strong>Global Ranking:</strong> <%= user.matchedUser.profile.ranking || 'N/A' %></p>
+    
+   
+    <p><strong>Star Rating:</strong> <%= user.matchedUser.profile.starRating || 'N/A' %></p>
+    
+    <a href="/" class="button">Go Back</a>
+    <a href="/ranking">Show College Ranking</a>
+
+  </div>
+</body>
+</html>

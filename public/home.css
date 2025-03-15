@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: yellow;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+
+.uni{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.poten{
+    padding-left: 370px;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    padding: 5px;
+    color: black;
+    background-color: yellow;
+}
+
+.holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.log{
+   padding-left: 40px;
+}

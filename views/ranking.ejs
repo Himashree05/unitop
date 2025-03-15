@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Ranking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: #333;
+    }
+    .ranking-container {
+      width: 80%;
+      margin: auto;
+      padding-top: 50px;
+    }
+    h1 {
+      text-align: center;
+      color: yellow;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid yellow;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    td {
+      background-color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ranking-container">
+    <h1>Global Ranking</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Leetcode Username</th>
+          <th>Leetcode Rank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop through users and display their info -->
+        <% rankings.forEach((user, index) => { %>
+          <tr>
+            <td><%= index + 1 %></td> <!-- Rank will be the index + 1 -->
+            <td><%= user.userName %></td>
+            <td><%= user.leetcodeUsername %></td>
+            <td><%= user.globalRanking %></td> <!-- Display rank fetched from LeetCode -->
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
